@@ -1,0 +1,148 @@
+body {
+  /* background-color: #fff; */
+  background-image: url("background.jpg");
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-size: contain;     /* Ajusta la imagen para que quepa dentro del contenedor sin estirarse más allá de su tamaño original */
+  background-attachment: fixed;
+  background-position: center;
+  font-family: "Arial", sans-serif;
+  color: black;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+button {
+  font-family: "MS Sans Serif";
+  font-size: 20px; /* Increase the font size */
+  outline: 1px solid #000000;
+  background: #c0c0c0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ffffff #808080 #808080 #ffffff;
+  padding: 20px 40px; /* Increase the padding */
+  margin: 20px auto 3px;
+  display: inline-block; /* Change to inline-block */
+  position: relative;
+  bottom: 0px;
+  width: 200px; /* Optional: Set a specific width */
+}
+button:focus {
+  outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+button:focus {
+  outline: none;
+}
+.box {
+  width: 1000px;
+  background: #c0c0c0;
+  border-width: 1px;
+  border-color: #ffffff #808080 #808080 #ffffff;
+  border-style: solid;
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(-50%, -50%);
+  padding: 1px;
+  /* max-height: 80%; Define una altura máxima */
+  overflow: auto; /* Hace que el contenido interno sea desplazable si es necesario */
+}
+
+div.title {
+  height: 18px;
+  width: 100%;
+  background: #000080;
+  color: #fff;
+}
+img.title {
+  float: left;
+}
+p.title {
+  margin: 2px 0 0 1px;
+  float: left;
+  font-family: Tahoma;
+  font-weight: bold;
+  font-size: 11px;
+}
+.title button {
+  /*position:absolute;
+    right:3px;
+    top:3px;*/
+  margin: 2px 2px 2px 0;
+  float: right;
+  width: 14px;
+  height: 13.5px;
+  background: #c0c0c0;
+  border-width: 1px;
+  border-color: #ffffff #808080 #808080 #ffffff;
+  padding: 0;
+  font-size: 9px;
+  font-weight: bold;
+  font-family: Tahoma;
+  text-align: center;
+  focus: none;
+}
+div.body {
+  padding: 13px 12px 12px;
+  height: 100%;
+  width: calc(100% - 26px);
+  display: inline-block;
+}
+div.body p {
+  font-family: "MS Sans Serif";
+  font-size: 11px;
+}
+div.body button {
+  font-family: "MS Sans Serif";
+  font-size: 11px;
+  outline: 1px solid #000000;
+  background: #c0c0c0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ffffff #808080 #808080 #ffffff;
+  padding: 4px 10px;
+  margin: 20px auto 3px;
+  display: block;
+  position: relative;
+  bottom: 0px;
+}
+.scrollable-text{
+  height: 300px;
+  overflow: auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: left;
+
+}
+.iframe-box{
+    min-width:560;
+    min-height:315;
+}
+
+.scrollable-links {
+  max-height: 315px; /* You can adjust this height */
+  overflow-y: auto; /* Enables vertical scrolling */
+  border: 1px solid #c0c0c0; /* Optional: Add a border */
+  padding: 10px; /* Optional: Add padding */
+  text-align: left;
+}

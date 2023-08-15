@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Curso de Sistemas Operativos - Agosto 2023</title>
+</head>
+<body>
+    
+    <div class="center">
+
+        <div class="box">
+            <div class="title">
+              <img src="http://i63.tinypic.com/117hi0p.png" width="18" height="18" class="title" />
+              <p class="title">Videos</p>
+              <button>X</button>
+              <button>?</button>
+            </div>
+            <div class="body">
+                <div class="container"> 
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="scrollable-links"> <!-- Add this line -->
+                                <ul>
+                                    <li><a href="videos.html?url=eAZ3pC_Y7Sk">Instalar sistema operativo de cliente</a></li>
+                                    <li><a href="videos.html?url=II8i4q8bWtk">Instalación Windows Server 2019</a></li>
+                                    <li><a href="videos.html?url=lw4GO3-OsyQ">Crear Usuario desde Servidor</a></li>
+                                    <li><a href="videos.html?url=yYd9IR6iMZ4">Unir cliente al Dominio</a></li>
+                                    <li><a href="videos.html?url=rD7KzC1l3EE">Instalación de Active Directory</a></li>
+                                    <li><a href="videos.html?url=lJGaCRqlyuU">Pruebas DNS cliente y servidor</a></li>
+                                    <li><a href="videos.html?url=ZwBXB_WlxcA">Cambio de nombres a los equipos</a></li>
+                                    <li><a href="videos.html?url=eSG86laeW5A">Configuración de red virtual Hyper-V</a></li>
+                                    <li><a href="videos.html?url=o3kzFGyXTNQ">Instalación DFS y creación de carpetas compartidas</a></li>
+                                    <li><a href="videos.html?url=NJkpOkyUius">Instalación DHCP y configuración de IP dinámica</a></li>
+                                    <li><a href="videos.html?url=YDHLZvnv_3U">Prueba de conexión entre cliente y servidor</a></li>
+                                    <li><a href="videos.html?url=3LnIEatFrDo">Instalación IIS y CA</a></li>
+                                    <li><a href="videos.html?url=PMuOYvb_WZQ">Compartir carpeta del servidor a cliente</a></li>
+                                    <li><a href="videos.html?url=QrXMFsSij68">Crear nuevo disco</a></li>
+                                    <li><a href="videos.html?url=zXN7g8A2GIM">Creación de página web e implementación del certificado</a></li>
+                                    <li><a href="videos.html?url=mQ5C-fcugEU">Instalación del DFS y creación de carpetas compartidas</a></li>
+                                    <li><a href="videos.html?url=Vt99H3CQ5xY">Permisos MP3 y AVL por medio de un GPO</a></li>
+                                    <li><a href="videos.html?url=RjPVj88hTuA">Mapeo de red con carpetas compartidas</a></li>
+                                    <li><a href="videos.html?url=if9wXjgYwbI">Fondo de escritorio clientes GPO</a></li>
+                                    <li><a href="videos.html?url=HxehlGE9ef4">Definir página inicio Internet Explorer GPO</a></li>
+                                    <li><a href="videos.html?url=G0PUZDrugJQ">Permiso del uso de panel de control GPO</a></li>
+                                    <li><a href="videos.html?url=tBszrNu_3TU">Bloquear notepad.exe y regedit.exe GPO</a></li>
+                                    <li><a href="videos.html?url=ebwRnC-kL8Y">Establecer 50MB en los registros de seguridad de Windows GPO</a></li>
+                                    <li><a href="videos.html?url=THTGT-qN-V0">Creación de carpetas personales para los usuarios P: GPO</a></li>
+                                    <li><a href="videos.html?url=2Cw_j_cfhRY">Cambio nombre Admin y Guest GPO</a></li>
+                                    <li><a href="videos.html?url=mBepHaghPGs">Redirect Documents</a></li>
+                                </ul>
+                            </div> <!-- Add this line -->
+                        </div>
+                        
+                   
+                        <div class="col-8 iframe-box" >
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/i27FgZHmDDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="index.html"><button>Regresar</button></a>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+          </div>
+
+
+     
+    </div>
+<script>
+    var url = window.location.href;
+    var url = url.split("=");
+    var url = url[1];
+    var iframe = document.querySelector(".iframe-box");
+    iframe.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/'+url+'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+</script>
+</body>
+</html>
